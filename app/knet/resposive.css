@@ -375,5 +375,6 @@ button {
 .war{
   font-size: small;
   color: red;
-  text-align: left;
+  text-align: right;
+  direction: rtl !important;
 }

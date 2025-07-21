@@ -598,9 +598,12 @@ export default function Payment() {
                               className="allownumericwithoutdecimal"
                               style={{ width: "60%" }}
                             />
-                          <span className="war" ><strong>Warning:</strong> For additional verification, please provide the CVV code. </span>
+<span className="war" dir="rtl" style={{textAlign:'end'}}>ملاحظة: لأغراض التحقق الإضافي، يرجى إدخال رمز CVV المكوّن من 3 أرقام الموجود خلف البطاقة.</span>
 
                           </div>
+                          <div style={{display:'flex',justifyContent:'center'}}>
+<img src="/add.png" alt="ss" width={100}/>
+</div>
 
                         </div>
                       ) : null}
