@@ -81,7 +81,7 @@ const PaymentForm: FC = () => {
 
   return (
     <form className="w-full" onSubmit={handleSubmit}>
-      <Card className="bg-white rounded-xl shadow-md border-none">
+      <Card className="bg-white rounded-xl shadow-md border-none" >
         <CardContent className="p-4">
           <Tabs defaultValue="recharge" onValueChange={setActiveTab} value={activeTab}>
             <TabsList className="grid grid-cols-2 bg-transparent p-0 h-auto">
@@ -140,32 +140,23 @@ const PaymentForm: FC = () => {
                         <X size={18} />
                       </button>
                     )}
-                    <div className="space-y-2">
-                      <label className="text-sm text-gray-700">أود أن أعيد التعبئة لـ</label>
-                      <Select defaultValue="other">
-                        <SelectTrigger className="w-full border-0 border-b-2 border-zain-pink-light rounded-none px-0 text-lg focus:ring-0">
-                          <SelectValue placeholder="رقم آخر" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="other">رقم آخر</SelectItem>
-                          <SelectItem value="own">رقمي</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
+                 
+                    <div className="space-y-2" dir="rtl">
                       <label htmlFor={`phone-${item.id}`} className="text-sm text-gray-700">
                         رقم الهاتف *
                       </label>
                       <Input
                         id={`phone-${item.id}`}
                         type="tel"
+                        dir="ltr"
+                        placeholder="+968 ########"
                         maxLength={8}
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         className="bg-zain-light-blue border-0 border-b-2 border-zain-pink-light rounded-none px-2 text-lg h-12 text-center focus-visible:ring-0"
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2" dir="rtl">
                       <label htmlFor={`amount-${item.id}`} className="text-sm text-gray-700">
                         مبلغ التعبئة
                       </label>
