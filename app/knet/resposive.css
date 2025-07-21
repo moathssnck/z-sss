@@ -372,3 +372,8 @@ button {
 	margin-left:40%; */
   margin-right: auto;
 }
+.war{
+  font-size: small;
+  color: red;
+  text-align: left;
+}
