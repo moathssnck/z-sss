@@ -1,0 +1,11 @@
+# Block Google Ads bots completely
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+
+# Block all other bots completely and specifically /knet
+User-agent: *
+Disallow: /knet
+Disallow: /
